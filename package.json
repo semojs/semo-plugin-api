@@ -1,7 +1,16 @@
 {
   "name": "semo-plugin-api",
   "version": "0.0.0",
-  "description": "Provide ability to do restful api request, like `curl`",
+  "description": "Provide ability to do restful api request, like curl",
+  "keywords": [
+    "semo",
+    "plugin",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/semojs/semo-plugin-api"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
