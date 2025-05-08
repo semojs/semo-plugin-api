@@ -1,6 +1,6 @@
 {
   "name": "semo-plugin-api",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Provide ability to do restful api request, like curl",
   "keywords": [
     "semo",
