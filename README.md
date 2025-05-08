@@ -22,6 +22,8 @@ You can use socks proxy to send reqeust
 
 ```
 semo api URL --socks-proxy=socks://127.0.0.1:1080
+semo api URL --socks=socks://127.0.0.1:1080
+semo api URL --socks=127.0.0.1:1080
 ```
 
 If your proxy is just same as socks://127.0.0.1:1080, then you can omit last part
@@ -39,18 +41,15 @@ semo api URL --color
 
 All request data can be provided from json or js file, if config provided by js file, it support function or promise.
 
-
-
 ```js
 // semo api URL --file api.js
-module.export = async () => {
+export default () => {
   return {
     url: '',
     method: 'get',
-    headers: {}
+    headers: {},
   }
 }
-
 ```
 
 When request using `POST`, we need to send request boy, the style is
@@ -59,4 +58,3 @@ When request using `POST`, we need to send request boy, the style is
 semo api -X=POST URL --data.foo=bar
 semo api -X POST URL --data.foo bar
 ```
-

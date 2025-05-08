@@ -1,8 +1,9 @@
-import { api } from '../common/api'
+import { api } from '../common/api.js'
 
-export = async (Utils) => {
-  return {
-    hook_repl: new Utils.Hook('semo', { api: api('semo-repl') }),
-    hook_component: new Utils.Hook('semo', { api }),
-  }
+export const hook_repl = {
+  semo: () => {
+    return {
+      api: api('semo-plugin-api'),
+    }
+  },
 }

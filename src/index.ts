@@ -1,1 +1,1 @@
-export { api } from './common/api'
+export { api } from './common/api.js'
